@@ -18,7 +18,7 @@ body main .right {
   background-size: 100% 90%;
   background-position: top;
 }
-body main .right .first-slide {
+body main .right .slide {
   background-image: url(./images/image-tanya.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,8 +43,11 @@ body main .right .slider .previous {
   height: 10px;
   background-image: url(./images/icon-prev.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
+}
+body main .right .slider .previous:hover {
+  background-image: url(./images/icon-prev-hover.svg);
 }
 body main .right .slider .next {
   float: right;
@@ -52,8 +55,11 @@ body main .right .slider .next {
   height: 10px;
   background-image: url(./images/icon-next.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
+}
+body main .right .slider .next:hover {
+  background-image: url(./images/icon-next-hover.svg);
 }
 body main .left {
   float: left;
@@ -70,20 +76,21 @@ body main .left .quote {
   margin-top: 100px;
   margin-left: 10%;
 }
-body main .left p:first-of-type {
+body main .left p {
   color: #202046;
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: -25px;
 }
-body main .left p:last-of-type {
+body main .left span:first-of-type {
   color: #202046;
   font-size: 1rem;
   font-weight: 700;
   line-height: 5;
 }
-body main .left p:last-of-type span {
+body main .left span:last-of-type {
   color: #babacf;
+  font-size: 1rem;
   font-weight: 300;
 }
 body main .bottom {
