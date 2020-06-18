@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  padding: 100px;
+}
+body main .right {
+  float: right;
+  width: 60%;
+  height: 500px;
+  background-image: url(./images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: top;
+}
+body main .right .first-slide {
+  background-image: url(./images/image-tanya.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 75%;
+  height: 75%;
+  margin: 45px auto;
+}
+body main .right .slider {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 12px;
+  overflow: hidden;
+  width: 75px;
+  margin-top: -65px;
+  margin-left: 25%;
+  box-shadow: 10px 10px 40px 0px #babacf, 2px 2px 10px 0px #babacf;
+}
+body main .right .slider .previous {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background-image: url(./images/icon-prev.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+body main .right .slider .next {
+  float: right;
+  width: 10px;
+  height: 10px;
+  background-image: url(./images/icon-next.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+body main .left {
+  float: left;
+  width: 40%;
+  height: 400px;
+}
+body main .left .quote {
+  width: 75px;
+  height: 75px;
+  background-image: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+  margin-top: 100px;
+  margin-left: 10%;
+}
+body main .left p:first-of-type {
+  color: #202046;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: -25px;
+}
+body main .left p:last-of-type {
+  color: #202046;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 5;
+}
+body main .left p:last-of-type span {
+  color: #babacf;
+  font-weight: 300;
+}
+body main .bottom {
+  float: left;
+  width: 40%;
+  height: 75px;
+  background-image: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+}
+
+/*# sourceMappingURL=compiled.css.map */
