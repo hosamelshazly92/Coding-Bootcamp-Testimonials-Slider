@@ -1,29 +1,28 @@
-let previous = document.getElementById("previous"),
-    next = document.getElementById("next");
+let next = document.getElementById("next"),
+    previous = document.getElementById("previous");
 
 next.addEventListener("click", function () {
-    let slide = document.getElementById("slide"),
-        main = document.getElementById("main"),
-        name = document.getElementById("name"),
-        job = document.getElementById("job");
+    let image1 = document.querySelector(".image-1"),
+        image2 = document.querySelector(".image-2");
 
-//    slide.style.backgroundImage = "url('images/image-john.jpg')";
+    image1.style.display = "none";
+    image2.style.display = "inline-block";
 
+    let main1 = document.querySelector("#main-1"),
+        main2 = document.querySelector("#main-2");
 
+    main1.style.display = "none";
+    main2.style.display = "block";
+
+    let name1 = document.querySelector("#name-1"),
+        name2 = document.querySelector("#name-2");
+
+    name1.style.display = "none";
+    name2.style.display = "inline-block";
+
+    let job1 = document.querySelector("#job-1"),
+        job2 = document.querySelector("#job-2");
+
+    job1.style.display = "none";
+    job2.style.display = "inline-block";
 });
-
-previous.addEventListener("click", function () {
-    let slide = document.getElementById("slide"),
-        main = document.getElementById("main"),
-        name = document.getElementById("name"),
-        job = document.getElementById("job");
-
-//    slide.style.backgroundImage = "url('images/image-tanya.jpg')";
-
-    main.innerHTML = '"' + " I've been interested in coding for a while but never taken the jump, until now. I couldn't recommend this course enough. I'm now in the job of my dreams and so excited about the future. " + '"';
-
-    name.innerHTML = "Tanya Sinclair";
-
-    job.innerHTML = "UX Engineer";
-});
-
