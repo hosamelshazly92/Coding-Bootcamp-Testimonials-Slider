@@ -20,9 +20,11 @@ $Grayish-Blue: hsl(240, 18%, 77%);
 body {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
-    padding: 100px;
 
     main {
+        width: 1024px;
+        height: 738px;
+        padding: 100px;
 
         .right {
             float: right;
@@ -35,6 +37,7 @@ body {
 
             .slide {
                 text-align: center;
+                overflow: hidden;
 
                 .image-1,
                 .image-2 {
@@ -156,24 +159,21 @@ body {
     }
 }
 
-@media (max-width: 863px) {
+@media (max-width: 865px) {
     body {
-        padding: 10% 5%;
-
         main {
+            width: auto;
+            height: auto;
+            
             .right {
                 float: none;
-                width: 100%;
+                width: 500px;
                 padding: 10px;
-
-                .slider {
-                    margin: -65px auto;
-                }
             }
 
             .left {
                 float: none;
-                width: 100%;
+                width: 500px;
                 text-align: center;
                 height: 300px;
 
@@ -200,7 +200,7 @@ body {
 
             .bottom {
                 float: none;
-                width: 100%;
+                width: 500px;
             }
         }
     }
