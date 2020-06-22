@@ -21,7 +21,8 @@ body main .right {
 body main .right .slide {
   text-align: center;
 }
-body main .right .slide .image-1, body main .right .slide .image-2 {
+body main .right .slide .image-1,
+body main .right .slide .image-2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

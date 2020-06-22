@@ -35,16 +35,17 @@ body {
 
             .slide {
                 text-align: center;
-                
-                .image-1, .image-2 {
+
+                .image-1,
+                .image-2 {
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
-                    width: 350px;  
+                    width: 350px;
                     height: 350px;
                     margin-top: 50px;
                 }
-                
+
                 .image-2 {
                     display: none;
                 }
