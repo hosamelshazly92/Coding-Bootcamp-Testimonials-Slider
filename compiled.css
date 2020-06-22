@@ -19,13 +19,18 @@ body main .right {
   background-position: top;
 }
 body main .right .slide {
-  background-image: url(./images/image-tanya.jpg);
+  text-align: center;
+}
+body main .right .slide .image-1, body main .right .slide .image-2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 75%;
-  height: 75%;
-  margin: 45px auto;
+  width: 350px;
+  height: 350px;
+  margin-top: 50px;
+}
+body main .right .slide .image-2 {
+  display: none;
 }
 body main .right .slider {
   background-color: #fff;
@@ -33,8 +38,9 @@ body main .right .slider {
   padding: 12px;
   overflow: hidden;
   width: 75px;
-  margin-top: -65px;
-  margin-left: 25%;
+  position: relative;
+  top: -25px;
+  left: 100px;
   box-shadow: -10px 10px 40px 0px #babacf, -2px 2px 10px 0px #babacf;
 }
 body main .right .slider .previous {
@@ -76,22 +82,34 @@ body main .left .quote {
   margin-top: 100px;
   margin-left: 10%;
 }
-body main .left p {
+body main .left #main-1,
+body main .left #main-2 {
   color: #202046;
   font-size: 1.2rem;
   font-weight: 300;
   margin-top: -25px;
 }
-body main .left span:first-of-type {
+body main .left #main-2 {
+  display: none;
+}
+body main .left #name-1,
+body main .left #name-2 {
   color: #202046;
   font-size: 1rem;
   font-weight: 700;
   line-height: 5;
 }
-body main .left span:last-of-type {
+body main .left #name-2 {
+  display: none;
+}
+body main .left #job-1,
+body main .left #job-2 {
   color: #babacf;
   font-size: 1rem;
   font-weight: 300;
+}
+body main .left #job-2 {
+  display: none;
 }
 body main .bottom {
   float: left;
@@ -124,13 +142,15 @@ body main .bottom {
   body main .left .quote {
     margin: 0 auto;
   }
-  body main .left p {
+  body main .left #main-1,
+body main .left #main-2 {
     padding: 0 5%;
   }
   body main .left span {
     display: block;
   }
-  body main .left span:first-of-type {
+  body main .left #name-1,
+body main .left #name-2 {
     line-height: 1;
     margin-top: 50px;
     margin-bottom: 10px;

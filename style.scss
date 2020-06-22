@@ -34,13 +34,20 @@ body {
             background-position: top;
 
             .slide {
-                background-image: url(./images/image-tanya.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                width: 75%;
-                height: 75%;
-                margin: 45px auto;
+                text-align: center;
+                
+                .image-1, .image-2 {
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    width: 350px;  
+                    height: 350px;
+                    margin-top: 50px;
+                }
+                
+                .image-2 {
+                    display: none;
+                }
             }
 
             .slider {
@@ -49,8 +56,9 @@ body {
                 padding: 12px;
                 overflow: hidden;
                 width: 75px;
-                margin-top: -65px;
-                margin-left: 25%;
+                position: relative;
+                top: -25px;
+                left: 100px;
                 box-shadow: -10px 10px 40px 0px $Grayish-Blue, -2px 2px 10px 0px $Grayish-Blue;
 
                 .previous {
@@ -99,24 +107,39 @@ body {
                 margin-left: 10%;
             }
 
-            p {
+            #main-1,
+            #main-2 {
                 color: $Dark-Blue;
                 font-size: 1.2rem;
                 font-weight: 300;
                 margin-top: -25px;
             }
 
-            span:first-of-type {
+            #main-2 {
+                display: none;
+            }
+
+            #name-1,
+            #name-2 {
                 color: $Dark-Blue;
                 font-size: 1rem;
                 font-weight: 700;
                 line-height: 5;
             }
 
-            span:last-of-type {
+            #name-2 {
+                display: none;
+            }
+
+            #job-1,
+            #job-2 {
                 color: $Grayish-Blue;
                 font-size: 1rem;
                 font-weight: 300;
+            }
+
+            #job-2 {
+                display: none;
             }
         }
 
@@ -157,7 +180,8 @@ body {
                     margin: 0 auto;
                 }
 
-                p {
+                #main-1,
+                #main-2 {
                     padding: 0 5%;
                 }
 
@@ -165,7 +189,8 @@ body {
                     display: block;
                 }
 
-                span:first-of-type {
+                #name-1,
+                #name-2 {
                     line-height: 1;
                     margin-top: 50px;
                     margin-bottom: 10px;
